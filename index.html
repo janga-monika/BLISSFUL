@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style media="screen">
+
+.checked {
+  color: orange;
+}
+
+
+.hd
+{
+width: 100%;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+.navi li a:hover {
+ color:white;
+  background-color: black;
+}
+.header {
+  background-image:url("back.jpg");
+background-repeat:no-repeat;
+background-size:cover;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+    height: 110px;
+}
+
+.body_class{
+    align-items:left;    
+}
+.navi  ul{
+   display:block;
+   list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:rgba(0, 0, 0, 0.658);
+  }
+
+ .navi li {
+    float: left;
+  }
+ 
+  .navi li a {
+    display: block;
+    
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+.cart{
+float:right;
+padding-right:25px;
+padding-top:8px;
+}
+.cart a
+{
+color:black;
+display:inline-block;
+padding-left:12px;
+}
+#acart
+{
+ display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#aguest
+{
+ display: block;
+  margin-left: auto;
+  margin-right: auto;
+color:black;
+}
+.higuest
+{
+float:right;
+padding-right:20px;
+padding-top:8px;
+}
+.higuest a
+{
+color:black;
+}
+.aboutus
+{
+float:right;
+padding-right:20px;
+padding-top:8px;
+}
+.aboutus a
+{
+color:black;
+}
+#aabout
+{
+ display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#search
+{
+float:right;
+position:absolute;
+    left:25%;
+    top:10%;
+    width:30%;
+    color:grey;
+}
+#searchicon
+{
+float:right;
+position:absolute;
+    left:55%;
+    top:10%;
+    color:grey;
+}
+#s
+{
+background-color:white;
+color:black;
+}
+
+
+body
+{
+margin:0px;
+padding:0;
+}
+
+
+
+
+
+
+
+
+.guestmenu
+{
+display:none;
+}
+.header ul li:hover .guestmenu
+{
+display:block;
+position:absolute;
+background-color:white;
+width:80px;
+}
+.guestmenu a
+{
+text-decoration:none;
+color:black;
+margin:-30px;
+}
+.guestmenu a:hover
+{
+font-weight: bold;
+}
+.guestmenu ul
+{
+display:black;
+}
+.header  .higuest  ul  li a:hover  .guestmenu 
+{
+color:white;
+display:block;
+position:absolute;
+background-color:white;
+color:white;
+}
+
+
+
+
+
+
+
+
+
+.container
+{
+ padding-top:170px;
+overflow:auto;
+max-width:1160px;
+margin:auto;
+}
+.gallery
+{
+border:2px solid black;
+
+margin:30px;
+float:left;
+width:320px;
+box-shadow: 10px 10px 10px rgba(0,0,0,0.6);
+}
+.desc .add
+{
+display:flex;
+}
+#b
+{
+width:320px;
+height:400px;
+}
+.desc
+{
+margin-top:-1.5%;;
+text-align:center;
+color:white;
+text-style:bold;
+border:2px solid black;
+background:rgba(0,0,0,0.8);
+}
+
+
+
+
+footer{
+    background: #111;
+    height: auto;
+    padding-top: 20px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #cacdd2;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+    border: 1.1px solid white;
+    padding: 5px;
+
+    border-radius: 50%;
+
+}
+.socials a i{
+    font-size: 1.1rem;
+    width: 20px;
+
+
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: aqua;
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding: 20px;
+padding-bottom: 40px;
+    text-align: center;
+}
+.footer-bottom p{
+float: left;
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom p a{
+  color:#44bae8;
+  font-size: 16px;
+  text-decoration: none;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+.footer-menu{
+  float: right;
+
+}
+.footer-menu ul{
+  display: flex;
+}
+.footer-menu ul li{
+padding-right: 10px;
+display: block;
+}
+.footer-menu ul li a{
+  color: #cfd2d6;
+  text-decoration: none;
+}
+.footer-menu ul li a:hover{
+  color: #27bcda;
+}
+
+@media (max-width:500px) {
+.footer-menu ul{
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.profile-card{
+    position: relative;
+    width: 150px;
+    height: 120px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 50%;
+    transition: .6s;
+    margin: 20px 20px;
+}
+.profile-card:hover{
+    border-radius: 10px;
+    height: 80px;
+}
+.profile-card:hover .img{
+    transform: translateY(-60px);
+}
+.profile-card .img{
+    position: relative;
+    width: 140px;
+    height: 190px;
+    transition: .6s;
+    z-index: 99;
+}
+.profile-card .img img{
+    width: 150px;
+    border-radius: 50%;
+    box-shadow: 0 0 22px #3336;
+    transition: .6s;
+}
+.profile-card:hover img{
+    border-radius: 10px;
+}
+.profile-card:hover .caption{
+    opacity: 1;
+}
+.caption{
+    text-align: center;
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: .6s;
+}
+.caption h3{
+    font-size: 15px;
+}
+
+
+
+</style>
+    <title>Blisfull/Home</title>
+</head>
+<body >
+<header>
+    <div class="header">
+        <ul style="list-style: none;">
+            <img  style="position:absolute;top:10px;left:10px;" class="body_class" src="logo.png " alt="logo" width="200" height="100" >
+<li class="aboutus"><input id="aabout" type="image" src="aboutus.png" width="50" height="50"/><a style="text-decoration:none;" href="aboutus.html"><b>About us</b></a></li>
+ <li  class="higuest" >  <input id="aguest" type="image" src="higuest.png" width="50" height="50"/><a ><b>Hi guest</b></a>
+<div class="guestmenu" >
+<ul  style="list-style: none;border:2px solid black;">
+<li><a href="register.html">Register</a></li>
+<li><a href="login.html">Login</a></li>
+<li><a href="">Logout</a></li>
+</ul>
+</div>
+</li>
+<li class="cart"><input  id="acart" type="image" src="cart.png" width="50" height="50"/> <a style="text-decoration:none;" href="showcart.php" ><b>Cart</b></a> </li>
+<button style="border:2px solid black;" id="searchicon"><input type="image" src="search.png" width="20" height="20"/>  </button>    
+<input type="search" id="search" placeholder="Search flowers, cakes, gifts, etc." size="50" style="font-size:20px;">     
+</div>          
+    </div>
+</ul>
+
+    <div  class="navi">
+        <ul  style="list-style: none;">
+            <li id="s"><a href="index.html"><b style="color:black">Home</b></a></li>
+            <li  ><a  href="Birthday.html"><b style="color:white">Birthday</b></a></li>   
+            <li><a href="Anniversary.html"><b style="color:white">Anniversary</b></a></li>
+            <li><a href="Cakes.html"><b style="color:white">Cakes</b></a></li>
+            <li><a href="Flowers.html"><b style="color:white">Flowers</b></a></li>
+            <li><a href="Customised.html"><b style="color:white">Customise</b></a></li>
+            <li><a href="Plants.html"><b style="color:white">Plants</b></a></li>
+            <li><a href="Chocolates.html"><b style="color:white">Chocolates</b></a></li>
+            <li><a href="Occasions.html"><b style="color:white">Occasions</b></a></li
+          </ul>
+    </div>
+</header>
+<div >
+<img style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);display: block;margin-left: auto;margin-right: auto;margin-top:60px;height:500px;width=750px;" src="img1.png"/>
+</div>
+<div style="padding-top:30px;">
+    <div class="Catelog" style="align-items: center;justify-content: center;display: flex;">
+      <div class="profile-card">
+        <div class="img">
+          <a href="Mobiles.html">
+            <img src="t1.jpg"  />
+          </a>
+        </div>
+        <div class="caption">
+          <h3>TOYS</h3>
+        </div>
+      </div>
+      <div class="profile-card">
+        <div class="img">
+          <a href="Frizzers.html">
+            <img src="t2.jpg"  />
+          </a>
+        </div>
+        <div class="caption">
+          <h3>BOOKS</h3>
+        </div>
+      </div>
+      <div class="profile-card">
+        <div class="img">
+          <a href="Tv.html">
+            <img src="t4.jpg" alt="Mobiles" />
+          </a>
+        </div>
+        <div class="caption">
+          <h3>SHOWCASE</h3>
+        </div>
+      </div>
+      <div class="profile-card">
+        <div class="img">
+          <a href="Washing.html">
+            <img src="t3.jpg" alt="Mobiles" />
+          </a>
+        </div>
+        <div class="caption">
+          <h3>HAND BAG</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="Catelog" style=";align-items: center;justify-content: center;display: flex;">
+      <div class="profile-card">
+        <div class="img">
+          <a href="Appliences.html">
+            <img src="t6.png" alt="Mobiles" />
+          </a>
+        </div>
+        <div class="caption">
+          <h3>FLOWERVASE</h3>
+        </div>
+      </div>
+      <div class="profile-card">
+        <div class="img">
+          <a href="Electronics.html">
+            <img src="t5.png" alt="Mobiles" />
+          </a>
+        </div>
+        <div class="caption">
+          <h3>BOUQUET</h3>
+        </div>
+      </div>
+      <div class="profile-card">
+        <div class="img">
+          <a href="Accessories.html">
+            <img src="t5.jpg" alt="Mobiles" />
+          </a>
+        </div>
+        <div class="caption">
+          <h3>UTENSILS</h3>
+        </div>
+      </div>
+      <div class="profile-card">
+        <div class="img">
+          <a href="Laptops.html">
+            <img src="t8.jpg" alt="Mobiles" />
+          </a>
+        </div>
+        <div class="caption">
+          <h3>CARTOON TOYS</h3>
+        </div>
+      </div>
+
+</div>
+<div class="select">
+<footer>
+        <div class="footer-content">
+            <h3>Blissful Developer</h3>
+            <p>Happiness is not so much in having as sharing. We make a living by what we get, but we make a life by what we give.</p>
+            <ul class="socials">
+                <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                <li><a href=""><i class="fa fa-youtube"></i></a></li>
+                <li><a href=""><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+
+    </footer>
+
+</body>
+</html>
+
+
