@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+.about
+{
+padding-top:200px;
+}
+.hd
+{
+width: 100%;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    background-size: cover;
+}
+
+
+p{
+text-indent: 180px;
+font-size: 20px;
+}
+
+
+
+
+.navi li a:hover {
+ color:white;
+  background-color: black;
+}
+.header {
+  background-image:url("back.jpg");
+background-repeat:no-repeat;
+background-size:cover;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+    height: 110px;
+}
+
+.body_class{
+    align-items:left;    
+}
+.navi  ul{
+   display:block;
+   list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:rgba(0, 0, 0, 0.658);
+  }
+
+ .navi li {
+    float: left;
+  }
+ 
+  .navi li a {
+    display: block;
+    
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+.cart{
+float:right;
+padding-right:25px;
+padding-top:8px;
+}
+.cart a
+{
+color:black;
+display:inline-block;
+padding-left:12px;
+}
+#acart
+{
+ display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#aguest
+{
+ display: block;
+  margin-left: auto;
+  margin-right: auto;
+color:black;
+}
+.higuest
+{
+float:right;
+padding-right:20px;
+padding-top:8px;
+}
+.higuest a
+{
+color:black;
+}
+.aboutus
+{
+float:right;
+padding-right:20px;
+padding-top:8px;
+}
+.aboutus a
+{
+color:black;
+}
+#aabout
+{
+ display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#search
+{
+float:right;
+position:absolute;
+    left:25%;
+    top:30%;
+    width:30%;
+    color:grey;
+}
+#searchicon
+{
+float:right;
+position:absolute;
+    left:55%;
+    top:30%;
+    color:grey;
+}
+#s
+{
+background-color:white;
+color:black;
+}
+
+
+body
+{
+margin:0px;
+padding:0;
+}
+
+
+.guestmenu
+{
+display:none;
+}
+.header ul li:hover .guestmenu
+{
+display:block;
+position:absolute;
+background-color:white;
+width:80px;
+}
+.guestmenu a
+{
+text-decoration:none;
+color:black;
+margin:-30px;
+}
+.guestmenu a:hover
+{
+font-weight: bold;
+}
+.guestmenu ul
+{
+display:black;
+}
+.header  .higuest  ul  li a:hover  .guestmenu 
+{
+color:white;
+display:block;
+position:absolute;
+background-color:white;
+color:white;
+}
+
+
+
+
+
+
+
+
+
+.container
+{
+ padding-top:170px;
+overflow:auto;
+max-width:1160px;
+margin:auto;
+}
+.gallery
+{
+padding:30px;
+float:left;
+width:320px;
+}
+.desc
+{
+text-align:center;
+}
+#b
+{
+width:320px;
+height:400px;
+box-shadow: 10px 10px 10px rgba(0,0,0,0.6);
+border-radius:100%;
+display:block;
+}
+.desc
+{
+color:white;
+text-style:bold;
+border:2px solid black;
+background:rgba(0,0,0,0.8);
+box-shadow: 10px 10px 10px rgba(0,0,0,0.6);
+}
+
+</style>
+    <title>Blisfull/Home</title>
+</head>
+<body >
+<section class="hd">
+    <div class="header">
+        <ul style="list-style: none;">
+            <img  style="position:absolute;top:10px;left:10px;" class="body_class" src="logo.png " alt="logo" width="200" height="100" >
+<li class="aboutus"><input id="aabout" type="image" src="aboutus.png" width="50" height="50"/><a ><b>About us</b></a></li>
+ <li  class="higuest" >  <input id="aguest" type="image" src="higuest.png" width="50" height="50"/><a ><b>Hi guest</b></a>
+<div class="guestmenu" >
+<ul  style="list-style: none;border:2px solid black;">
+<li><a href="">Register</a></li>
+<li><a href="">Login</a></li>
+<li><a href="">Logout</a></li>
+</ul>
+</div>
+</li>
+<li class="cart"><input  id="acart" type="image" src="cart.png" width="50" height="50"/> <a ><b>Cart</b></a> </li>
+<button style="border:2px solid black;" id="searchicon"><input type="image" src="search.png" width="20" height="20"/>  </button>    
+<input type="search" id="search" placeholder="Search flowers, cakes, gifts, etc." size="50" style="font-size:20px;">     
+</div>          
+    </div>
+</ul>
+
+    <div  class="navi">
+        <ul  style="list-style: none;">
+            <li><a href="index.html"><b style="color:white">Home</b></a></li>
+            <li><a href="Birthday.html"><b style="color:white">Birthday</b></a></li>   
+            <li><a href="Anniversary.html"><b style="color:white">Anniversary</b></a></li>
+            <li><a href="Cakes.html"><b style="color:white">Cakes</b></a></li>
+            <li><a href="Flowers.html"><b style="color:white">Flowers</b></a></li>
+            <li><a href="Customised.html"><b style="color:white">Customise</b></a></li>
+            <li><a href="Plants.html"><b style="color:white">Plants</b></a></li>
+            <li><a href="Chocolates.html"><b style="color:white">Chocolates</b></a></li>
+            <li><a href="Occasions.html"><b style="color:white">Occasions</b></a></li
+          </ul>
+    </div>
+</section>
+<!--<div class="container">
+<div class="gallery">
+<img id="b" src="Monika.jpg" />
+<div class="desc"><b>J.Monika</b></div>
+</div>
+
+<div class="gallery">
+<img id="b" src="Harshitha.jpg"/>
+<div class="desc"><b>B.Harshitha</b></div>
+</div>
+
+<div class="gallery">
+<img id="b" src="Sushma.jpg"/>
+<div class="desc"><b>Y.Sushma</b></div>
+</div>
+
+<div class="gallery">
+<img id="b" src="Nithin.jpg"/>
+<div class="desc"><b>V.Sai Nithin Reddy</b></div>
+</div>
+
+<div class="gallery">
+<img id="b" src="Bhavana.jpg"/>
+<div class="desc"><b>B.Bhavana</b></div>
+</div>
+</div>
+-->
+<br>
+<div class="about">
+<p><b>About This Website:</b></p>
+<p><i>People often tend to surprise their loved ones
+by giving gifts & planning surprising events.</i></p>
+
+<p><i>But sometimes it is difficult to find the gifts
+they wanted to personally customize.</i></p>
+
+<p><i>So , we came up with the website which
+solves this problem.</i></p>
+
+<p><i>The website is about customized gifts that is
+people can customize the gifts according to
+their wish.</i><p>
+
+<p><b>Features:</b></p>
+<p><i>It is available 24/7.</i></p>
+
+<p><i>Customized service.</i></p>
+
+<p><i>On time delivery of the product.</i></p>
+
+<p><i>Products based on events.</i></p>
+</div>
+</body>
+</html>

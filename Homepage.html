@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Homestyle.css">
+    <title>Blisfull/Home</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style media="screen">
+.hd
+{
+width: 100%;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    background-size: cover;
+}
+
+
+footer{
+    background: #111;
+    height: auto;
+    padding-top: 20px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #cacdd2;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+    border: 1.1px solid white;
+    padding: 5px;
+
+    border-radius: 50%;
+
+}
+.socials a i{
+    font-size: 1.1rem;
+    width: 20px;
+
+
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: aqua;
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding: 20px;
+padding-bottom: 40px;
+    text-align: center;
+}
+.footer-bottom p{
+float: left;
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom p a{
+  color:#44bae8;
+  font-size: 16px;
+  text-decoration: none;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+.footer-menu{
+  float: right;
+
+}
+.footer-menu ul{
+  display: flex;
+}
+.footer-menu ul li{
+padding-right: 10px;
+display: block;
+}
+.footer-menu ul li a{
+  color: #cfd2d6;
+  text-decoration: none;
+}
+.footer-menu ul li a:hover{
+  color: #27bcda;
+}
+
+@media (max-width:500px) {
+.footer-menu ul{
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+}
+</style>
+</head>
+<body >
+<section class="hd">
+    <div class="header">
+        <ul style="list-style: none;">
+            <img  style="position:absolute;top:10px;left:10px;" class="body_class" src="logo.png " alt="logo" width="200" height="100" >
+<li class="aboutus"><input id="aabout" type="image" src="aboutus.png" width="50" height="50"/><a ><b>About us</b></a></li>
+ <li  class="higuest" >  <input id="aguest" type="image" src="higuest.png" width="50" height="50"/><a ><b>Hi guest</b></a>
+<div class="guestmenu" >
+<ul  style="list-style: none;border:2px solid black;">
+<li><a href="register.html">Register</a></li>
+<li><a href="login.html">Login</a></li>
+<li><a href="">Logout</a></li>
+</ul>
+</div>
+</li>
+<li class="cart"><input  id="acart" type="image" src="cart.png" width="50" height="50"/> <a ><b>Cart</b></a> </li>
+<button style="margin-top:40px;border:2px solid black;" id="searchicon"><input type="image" src="search.png" width="20" height="20"/>  </button>    
+<input style="margin-top:40px;padding:5px;"type="search" id="search" placeholder="Search flowers, cakes, gifts, etc." size="50" style="font-size:20px;">     
+</div>          
+    </div>
+</ul>
+
+    <div  class="navi">
+        <ul  style="list-style: none;">
+            <li id="s"><a href="Homepage.html"><b style="color:black">Home</b></a></li>
+            <li  ><a  href="Birthday.html"><b style="color:white">Birthday</b></a></li>   
+            <li><a href="Anniversary.html"><b style="color:white">Anniversary</b></a></li>
+            <li><a href="Cakes.html"><b style="color:white">Cakes</b></a></li>
+            <li><a href="Flowers.html"><b style="color:white">Flowers</b></a></li>
+            <li><a href="Customised.html"><b style="color:white">Customise</b></a></li>
+            <li><a href="Plants.html"><b style="color:white">Plants</b></a></li>
+            <li><a href="Chocolates.html"><b style="color:white">Chocolates</b></a></li>
+            <li><a href="Occasions.html"><b style="color:white">Occasions</b></a></li
+          </ul>
+    </div>
+</section>
+<!--<div class="slider" align="center">
+<div class="slides">
+<input type="radio" name="radio-btn" id="radio1">
+<input type="radio" name="radio-btn" id="radio2">
+<input type="radio" name="radio-btn" id="radio3">
+
+<div class="slide first">
+<img src="img1.png" alt="">
+</div>
+<div class="slide">
+<img src="img2.webp" alt="">
+</div>
+<div class="slide">
+<img src="img3.jpg" alt="">
+</div>
+
+<div class="navigation-auto">
+<div class="auto-btn1"></div>
+<div class="auto-btn2"></div>
+<div class="auto-btn3"></div>
+</div
+
+</div>
+
+<div class="navigation-manual">
+<label for="radio1" class="manual-btn"></label>
+<label for="radio2" class="manual-btn"></label>
+<label for="radio3" class="manual-btn"></label>
+</div>
+
+</div>-->
+<div  class="homeimage">
+<img style="height:400px;width:1000px;padding-top:19%;padding-left:10%;padding-bottom:3%;" src="img1.png"/>
+</div>
+<footer>
+        <div class="footer-content">
+            <h3>Blissful Developer</h3>
+            <p>Happiness is not so much in having as sharing. We make a living by what we get, but we make a life by what we give.</p>
+            <ul class="socials">
+                <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                <li><a href=""><i class="fa fa-youtube"></i></a></li>
+                <li><a href=""><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+
+    </footer>
+<script type="text/javascript">
+
+var counter=1;
+setInterval(function(){
+document.getElementById('radio'+counter).checked = true;
+counter++;
+if(counter>3)
+{
+counter=1;
+}
+},5000);
+</script>
+</body>
+</html>
+
+
